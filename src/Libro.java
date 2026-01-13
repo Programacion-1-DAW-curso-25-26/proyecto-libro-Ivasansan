@@ -1,22 +1,28 @@
 public class Libro {
     // ATRIBUTOS
-    // Ponemos los atributos privados
     private String titulo;
     private String autor;
     private int numPags;
     private int valoracion;
 
     // METODOS
-    // Arreglamos un error en de sintaxis en el apartado de autor
-    public void mostrarInfo(){
+    public void mostrarInfo() {
         System.out.println("El titulo del libro es --> " + titulo);
-        System.out.println("El autor del libro es -->" + autor);
+        System.out.println("El autor del libro es --> " + autor);
         System.out.println("El libro tiene " + numPags + " páginas");
         System.out.println("El libro tiene " + valoracion + " de valoración");
     }
-    // GETTERS Y SETTERS
-    // Creamos los getters y los setters
 
+    // CONSTRUCTOR
+    // Creamos el constructor
+    public Libro(String titulo, String autor, int numPags, int valoracion) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.numPags = numPags;
+        this.valoracion = valoracion;
+    }
+
+    // GETTERS Y SETTERS
     public String getTitulo() {
         return titulo;
     }
