@@ -4,6 +4,7 @@ public class Libro {
     private String autor;
     private int numPags;
     private int valoracion;
+    
 
     // METODOS
     public void mostrarInfo() {
